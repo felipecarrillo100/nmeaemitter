@@ -59,15 +59,17 @@ mvn exec:java
 Or with custom arguments:
 
 ```bash
-mvn exec:java -Dexec.args="tcp://localhost:1883 admin admin producers/nmea/data"
-```
+mvn exec:java -Dexec.args="tcp://localhost:1883 admin admin producers/mycar/data ./mosaic.txt \"2023-09-21 07:40:56\" \"2023-09-21 07:59:00\""```
+
 
 **Arguments:**
 1. MQTT broker URL (default: `tcp://localhost:1883`)
 2. MQTT username (default: `admin`)
 3. MQTT password (default: `admin`)
-4. Base topic (default: `producers/ferries/data`)
-
+4. Base topic (default: `producers/mycar/data`)
+5. Path to the .txt file with NMEA messages (default: ./mosaic.txt)
+6. Start datetime (format: yyyy-MM-dd HH:mm:ss, default: 2023-09-21 07:40:56)
+7. End datetime (format: yyyy-MM-dd HH:mm:ss, default: 2023-09-21 07:59:00)
 ---
 
 ## ⚠️ MQTT/STOMP Compatibility
