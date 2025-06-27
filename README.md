@@ -1,4 +1,4 @@
-# 🛳️ NYC Ferry Advanced Simulation with MQTT Publisher
+# 📡 NMEA MQTT Publisher Simulation
 
 This Java application reads NMEA 0183 messages from a file, parses them into timestamped GPS sentences, and publishes them to an MQTT broker. It simulates real-time streaming by replaying recorded GPS messages at a per-second resolution.
 
