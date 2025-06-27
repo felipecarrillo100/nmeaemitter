@@ -22,7 +22,7 @@ public class Main {
     private static NmeaMessageParser parser;
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        parser = new NmeaMessageParser("D:\\ide\\console\\javamqtt\\nmea\\src\\main\\java\\org\\example\\mosaic.txt",
+        parser = new NmeaMessageParser("./mosaic.txt",
                 "2023-09-21 07:40:56",
                 "2023-09-21 07:59:00"
         );
