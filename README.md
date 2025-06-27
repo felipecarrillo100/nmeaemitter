@@ -60,7 +60,7 @@ Or with custom arguments:
 
 ```bash
 mvn exec:java -Dexec.args="tcp://localhost:1883 admin admin producers/mycar/data ./mosaic.txt \"2023-09-21 07:40:56\" \"2023-09-21 07:59:00\""```
-
+```
 
 **Arguments:**
 1. MQTT broker URL (default: `tcp://localhost:1883`)
